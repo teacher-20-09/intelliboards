@@ -1,0 +1,137 @@
+#dashboard {
+  .dashboard-container {
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding-top: 0;
+      padding-bottom: 0;
+      background: #FFF;
+
+      .logo {
+        width: 24px;
+        padding-right: 42px;
+        border-right: 1px solid #DEDEDE;
+
+        img {
+          margin: 0 2px;
+        }
+      }
+
+      .navbar-nav {
+        .drop-tite {
+          display: flex;
+  
+          .info {
+            padding-left: 10px;
+          }
+  
+          & > img {
+            width: 30px;
+            height: 30px;
+            margin: auto;
+          }
+  
+          .info {
+            .dropdown-toggle {
+              padding: 0;
+            }
+  
+            p {
+              color: #222222;
+              font-weight: 600;
+            }
+  
+            a {
+              text-decoration: none;
+              font-size: 13px;
+              font-weight: 600;
+              color: #535353;
+            }
+          }
+        }
+
+        .dropdown {
+          display: flex;
+          align-items: center;
+        }
+  
+        .nav-item {
+          padding: 0 28px;
+          color: #000000;
+          font-weight: 600;
+
+          .nav-link {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            border-bottom: 3px solid #FFF;
+          }
+          
+          .nav-link:hover {
+            border-bottom: 3px solid blue;
+            transition: all 1s ease-out;
+          }
+  
+          .active {
+            border-bottom: 3px solid blue;
+          }
+        }
+  
+        .dropdown {
+          display: flex;
+          min-width: 240px;
+          padding-right: 35px;
+          margin-right: 58px;
+          
+          .dropdown-toggle {
+            padding: 0;
+            
+            .down {
+              position: absolute;
+              top: 25px;
+              right: 15px;
+              width: 12px;
+              height: 8px;
+            }
+          }
+  
+          .dropdown-toggle::after {
+            display: none;
+          }
+  
+          .dropdown-menu {
+            width: 100%;
+          }
+        }
+      }
+
+      .nav-second {
+        .nav-items {
+          display: flex;
+          align-items: center;
+          padding: 0 12px;
+
+          .nav-link {
+            p {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: auto;
+              width: 37px;
+              height: 37px;
+              border-radius: 100%;
+              background: #0B61FE;
+              font-weight: 600;
+              color: #FFF;
+            }
+          }
+
+          .nav-link:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@media (max-width: 1280px) {
+  #dashboard .dashboard-container .card-statistic {
+    display: flex;
+    flex-direction: column; }
+    #dashboard .dashboard-container .card-statistic .user-churn {
+      margin: auto;
+      margin-bottom: 25px; }
+    #dashboard .dashboard-container .card-statistic .user-progress {
+      margin: auto !important; }
+  #dashboard .dashboard-container .growth {
+    display: flex;
+    flex-direction: column; }
+    #dashboard .dashboard-container .growth .customer-growth {
+      margin: auto;
+      margin-bottom: 20px; }
+    #dashboard .dashboard-container .growth .sales-growth {
+      margin: auto !important; } }
+
+@media (max-width: 992px) {
+  #dashboard .dashboard-container .navbar .navbar-toggler {
+    width: 41px;
+    height: 30px; }
+    #dashboard .dashboard-container .navbar .navbar-toggler span {
+      width: 15px;
+      height: 15px; }
+  #dashboard .dashboard-container .navbar .navbar-collapse .navbar-nav {
+    width: 100%;
+    max-width: 240px;
+    margin: auto; }
+    #dashboard .dashboard-container .navbar .navbar-collapse .navbar-nav .nav-item {
+      display: flex;
+      width: 100%;
+      max-width: 150px;
+      padding: 0; }
+      #dashboard .dashboard-container .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        height: 40px !important; }
+  #dashboard .dashboard-container .navbar .navbar-collapse .nav-second {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end; }
+    #dashboard .dashboard-container .navbar .navbar-collapse .nav-second .nav-item:nth-child(3) {
+      margin-bottom: 20px; } }
+
+@media (max-width: 768px) {
+  #dashboard .dashboard-container .card-statistic .user-churn {
+    flex-direction: column; }
+    #dashboard .dashboard-container .card-statistic .user-churn .user {
+      margin: auto !important;
+      margin-bottom: 15px !important;
+      max-width: 100%; }
+  #dashboard .dashboard-container .main-content .users-overview .table {
+    overflow-y: scroll; }
+  #dashboard .dashboard-container .growth .customer-growth-dynamic-graph {
+    flex-direction: column;
+    height: auto !important;
+    overflow-y: scroll; }
+    #dashboard .dashboard-container .growth .customer-growth-dynamic-graph #wrapper {
+      margin: auto !important; }
+    #dashboard .dashboard-container .growth .customer-growth-dynamic-graph .graph-description {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      margin-top: 20px;
+      min-height: 160px !important; }
+  #dashboard .dashboard-container .growth .sales-growth-dynamic-graph {
+    flex-direction: column; }
+    #dashboard .dashboard-container .growth .sales-growth-dynamic-graph .canvas {
+      justify-content: center !important; }
+    #dashboard .dashboard-container .growth .sales-growth-dynamic-graph .graph-description {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      margin-top: 20px;
+      padding-left: 0 !important;
+      min-height: 160px !important; } }
+
+@media (max-width: 768px) {
+  #dashboard .dashboard-container .main-content {
+    padding: 20px !important; } }
+
+@media (max-width: 1370px) {
+  #dashboard .dashboard-container .card-statistic .user-churn .user {
+    margin-right: 10px; } }
+
+@media (max-width: 1130px) {
+  #dashboard .dashboard-container .navbar .navbar-collapse .navbar-nav .nav-item {
+    padding: 0 10px; } }
+
+@media (max-width: 520px) {
+  #dashboard .dashboard-container .main-content header {
+    flex-direction: column; } }

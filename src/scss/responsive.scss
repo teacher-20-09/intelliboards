@@ -1,0 +1,203 @@
+$laptop-l: 1280px;
+$laptop: 992px;
+$tablet: 768px;
+$mobile: 480px;
+
+@media (max-width: $laptop-l) {
+  #dashboard {
+
+    .dashboard-container {
+      .card-statistic {
+        display: flex;
+        flex-direction: column;
+    
+        .user-churn {
+          margin: auto;
+          margin-bottom: 25px;
+        }
+    
+        .user-progress {
+          margin: auto !important;
+        }
+      }
+    
+      .growth {
+        display: flex;
+        flex-direction: column;
+    
+        .customer-growth {
+          margin: auto;
+          margin-bottom: 20px;
+        }
+    
+        .sales-growth {
+          margin: auto !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $laptop) {
+  #dashboard {
+    .dashboard-container {
+      .navbar {
+        .navbar-toggler {
+          width: 41px;
+          height: 30px;
+    
+          span {
+            width: 15px;
+            height: 15px;
+          }
+        }
+    
+        .navbar-collapse {
+          .navbar-nav {
+            width: 100%;
+            max-width: 240px;
+            margin: auto;
+    
+            .nav-item {
+              display: flex;
+              width: 100%;
+              max-width: 150px;
+              padding: 0;
+    
+              .nav-link {
+                height: 40px !important;
+              }
+            }
+          }
+    
+          .nav-second {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+    
+            .nav-item {
+              &:nth-child(3) {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  #dashboard {
+    .dashboard-container {
+      .card-statistic {
+        .user-churn {
+          flex-direction: column;
+  
+          .user {
+            margin: auto !important;
+            margin-bottom: 15px !important;
+            max-width: 100%;
+          }
+        }
+      }
+  
+      .main-content .users-overview .table {
+        overflow-y: scroll;
+      }
+  
+      .growth {
+        .customer-growth {
+          &-dynamic-graph {
+            flex-direction: column;
+            height: auto !important;
+            overflow-y: scroll;
+  
+            #wrapper {
+              margin: auto !important;
+            }
+  
+            .graph-description {
+              display: flex;
+              flex-direction: row;
+              margin: auto;
+              margin-top: 20px;
+              min-height: 160px !important;
+            }
+          }
+        }
+  
+        .sales-growth {
+          &-dynamic-graph {
+            flex-direction: column;
+  
+            .canvas {
+              justify-content: center !important;
+            }
+  
+            .graph-description {
+              display: flex;
+              flex-direction: row;
+              margin: auto;
+              margin-top: 20px;
+              padding-left: 0 !important;
+              min-height: 160px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  #dashboard {
+    .dashboard-container {
+      .main-content {
+        padding: 20px !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  #dashboard {
+    .dashboard-container {
+      .card-statistic {
+        .user-churn {
+          .user {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1130px) {
+  #dashboard {
+    .dashboard-container {
+      .navbar {
+        .navbar-collapse {
+          .navbar-nav {
+            .nav-item {
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  #dashboard {
+    .dashboard-container {
+      .main-content {
+        header {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

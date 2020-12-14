@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/src/css/main.css">
+  <title>Intelliboard</title>
+</head>
+<body>
+
+  <div id="dashboard">
+    <div class="dashboard-container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand logo" href="#"><img src="/src/img/logo.png" alt="Logo img ..."></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="dropdown">
+              <div class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="down" src="./src/img/down.png" alt="Down arrow ...">
+                <div class="drop-tite">
+                  <img src="./src/img/twitter.png" alt="">
+                  <div class="info">
+                    <p>IB Demo Connection</p>
+                    <a href="https://app.intelliboard.net">https://app.intelliboard.net/</a>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Link_1</a>
+                <a class="dropdown-item" href="#">Link 1</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Analytics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Forecast</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Metrics</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav nav-second ml-auto">
+            <li class="nav-items">
+              <a class="nav-link" href="#">
+                <img src="/src/img/notificatation_1.png" alt="">
+              </a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#">
+                <img src="/src/img/mail.png" alt="">
+              </a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#"><p>TL</p></a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+
+      <main>
+
+        <div class="sidebar">
+          <a href="#"><img src="/src/img/star.png" alt="Star image..."></a>
+          <a href="#"><img src="/src/img/menu-icon.png" alt="Menu image..."></a>
+          <a href="#"><img src="/src/img/notification.png" alt="Notification image..."></a>
+        </div>
+
+        <div class="main-content">
+          <header>
+            <h5>Dashboard</h5>
+            <div class="drop">
+              <p>Jan 1, 2020 - May 18, 2020</p>
+              <button data-toggle="collapse" data-target="#collapse">
+                <a href="#"><img src="/src/img/burger.png" alt="Burger image..."></a>
+              </button>
+
+              <div id="collapse" class="collapse">
+                <p>Lorem ipsum dolor text....</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit nulla doloribus, quidem nostrum tempore asperiores velit nobis id! Cumque, sunt.</p>
+              </div>
+            </div>
+          </header>
+
+          <hr>
+
+          <div class="card-statistic">
+            <div class="user-churn">
+              <div class="user">
+                <div class="card-title">
+                  <div class="avatar">
+                    <img src="/src/img/user-avatar.png" alt="User avatar...">
+                  </div>
+                  <p>User Churn</p>
+                </div>
+                <h2>1907</h2>
+                <hr>
+  
+                <div class="result">
+                  <p>Total</p>
+                </div>
+              </div>
+  
+              <div class="user">
+                <div class="card-title">
+                  <div class="avatar">
+                    <img src="/src/img/user-2-avatar.png" alt="User avatar...">
+                  </div>
+                  <p>User Churn</p>
+                </div>
+                <h2>0,5 %</h2>
+                <hr>
+                <div class="result">
+                  <p>From 1.9%</p>
+                </div>
+              </div>
+  
+              <div class="user">
+                <div class="card-title">
+                  <div class="avatar">
+                    <img src="/src/img/user-3-avatar.png" alt="User avatar...">
+                  </div>
+                  <p>New Customers</p>
+                </div>
+                <h2>48</h2>
+                <hr>
+                <div class="result">
+                  <p>from 56</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="user-progress">
+              <div class="progress">
+                <div class="progress-bar step_1" style="width:22.5%"></div>
+                <div class="progress-bar step_2" style="width:26%"></div>
+                <div class="progress-bar step_3" style="width:51.5%"></div>
+              </div>
+
+              <div class="progress-description">
+                <p class="progress-bar bg-white" style="width:22.5%">Prospects</p>
+                <p class="progress-bar bg-white" style="width:26%">Expired</p>
+                <p class="progress-bar bg-white" style="width:51.5%"><span>Active & Paid</span><span>Active & Free Trial</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="growth">
+            <div class="customer-growth">
+              <div class="customer-growth-header">
+                <p>Paid Customers vs. All Registrans by platform</p>
+              </div>
+              <hr>
+              <div class="customer-growth-dynamic-graph">
+                <div id="wrapper">
+                  <div class="chart">
+                    <table id="data-table" border="1" cellpadding="10" cellspacing="0" summary="skillset">
+                      <thead>
+                        <tr>
+                          <td>&nbsp;</td>
+                          <th scope="col">Blackboard Learn</th>
+                          <th scope="col">Canvas</th>
+                          <th scope="col">D2L</th>
+                          <th scope="col">Moodle</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>		
+                          <td>175</td>
+                          <td>83</td>
+                          <td>117</td>
+                          <td>145</td>
+                          <td>113</td>
+                          <td>145</td>
+                          <td>113</td>
+                          <td>95</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+  
+                <div class="graph-description">
+                  <p>Customer Growth:</p>
+                  <div class="growth-item">
+                    <p>Blackboard Learn</p>
+                    <p>40%</p>
+                  </div>
+                  <div class="growth-item">
+                    <p>2DL</p>
+                    <p>10%</p>
+                  </div>
+                  <div class="growth-item">
+                    <p>Canvas</p>
+                    <p>32%</p>
+                  </div>
+                  <div class="growth-item">
+                    <p>Moodle</p>
+                    <p>50%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="sales-growth">
+              <div class="sales-growth-header">
+                <p>Paid Customers vs. All Registrans by platform</p>
+              </div>
+              <hr>
+              <div class="sales-growth-dynamic-graph">
+                <div class="canvas">
+                  <svg class="charts" width="138" height="138" viewBox="0 0 35 35">
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                    <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                  </svg>
+                </div>
+
+                <div class="graph-description">
+                  <p>Product growth:</p>
+                  <div class="growth">
+                    <div>
+                      <span class="badge"> </span>
+                      <p>IntelliBoard</p>
+                    </div>
+                    <p>40%</p>
+                  </div>
+                  <div class="growth">
+                    <div>
+                      <span class="badge"> </span>
+                      <p>IntelliCart</p>
+                    </div>
+                    <p>10%</p>
+                  </div>
+                  <div class="growth">
+                    <div>
+                      <span class="badge"> </span>
+                      <p>InAttedance</p>
+                    </div>
+                    <p>32%</p>
+                  </div>
+                  <div class="growth">
+                    <div>
+                      <span class="badge"> </span>
+                      <p>AYS Onboard</p>
+                    </div>
+                    <p>50%</p>
+                  </div>
+                  <div class="growth">
+                    <div>
+                      <span class="badge"> </span>
+                      <p>AYS Evolve</p>
+                    </div>
+                    <p>50%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="users-overview">
+            <div class="header">
+              <p>User Overview</p>
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" fill="#DEDEDE" class="bi bi-filter" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="table">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>First</td>
+                    <td>Last</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>First</td>
+                    <td>Last</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>First</td>
+                    <td>Last</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                    <td>Handle</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  
+
+  <script src="/src//js/jquery.min.js"></script>
+  <script src="/src/js/dynamic-bar-graph.js"></script>
+  <script src="/src/js/bootstrap.min.js"></script>
+</body>
+</html>
